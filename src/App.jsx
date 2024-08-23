@@ -1,17 +1,20 @@
-import { Container } from 'react-bootstrap';
-import Footer from './components/Footer';
+import React from 'react';
 import Header from './components/Header';
-import Main from './components/Main';
-
+import Carrossel from './components/Carrossel';
+import Services from './components/Services';
+import PetsTable from './components/PetsTable';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
-    <Container>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
-    </Container>
+    <div>
+      <Header />
+      <Carrossel />
+      <Services />
+      <PetsTable />
+      <Footer />
+    </div>
   );
 }
 

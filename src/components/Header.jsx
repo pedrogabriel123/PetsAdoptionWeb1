@@ -1,18 +1,16 @@
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import React from 'react';
+import logo from '../assets/logo.png'; // Certifique-se de substituir pelo logotipo do PetsAdoption
 
 const Header = () => {
   return (
-    <header>
-      <Navbar bg="primary" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Salento.</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Cardápio</Nav.Link>
-            <Nav.Link href="#pricing">Login</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+    <header style={{ backgroundColor: '#4CAF50', padding: '10px 0', textAlign: 'center' }}>
+      <img src={logo} alt="Logo PetsAdoption" style={{ height: '50px' }} />
+      <nav>
+        <ul style={{ listStyleType: 'none', margin: 0, padding: 0, display: 'flex', justifyContent: 'center' }}>
+          <li style={{ margin: '0 20px' }}><a href="#home" style={{ color: '#fff', textDecoration: 'none' }}>Home</a></li>
+          <li style={{ margin: '0 20px' }}><a href="#about" style={{ color: '#fff', textDecoration: 'none' }}>Sobre</a></li>
+        </ul>
+      </nav>
     </header>
   );
 };

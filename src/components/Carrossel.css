@@ -1,0 +1,13 @@
+.Carrossel .Carrossel-inner {
+  height: 500px;
+}
+
+.Carrossel-inner .Carrossel-item img {
+  min-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .Carrossel .Carrossel-inner {
+    height: auto;
+  }
+}
